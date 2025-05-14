@@ -8,3 +8,9 @@
     tags: test
 
   - debug: msg="{{ print_text.stdout_lines }}"
+
+  - name: "Create file"
+    ansible.builtin.file:
+      path: /home/krishan/test.txt
+      state: touch
+      #mode: u=rw,g=r,o=r
