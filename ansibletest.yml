@@ -4,3 +4,6 @@
 
   - name: "Echo text"
     shell: "echo 'hello world !'"
+    register: print_text
+
+  - debug: msg="{{ print_text}}"
