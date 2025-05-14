@@ -5,5 +5,6 @@
   - name: "Echo text"
     shell: "echo 'hello world !'"
     register: print_text
+    tags: test
 
   - debug: msg="{{ print_text.stdout_lines }}"
